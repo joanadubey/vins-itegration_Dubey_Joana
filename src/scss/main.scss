@@ -1,3 +1,19 @@
+@font-face {
+  font-family: Playfairdisplay;
+  src: url("/src/fonts/PlayfairDisplay-VariableFont_wght.ttf")
+    format("truetype");
+}
+
+@font-face {
+  font-family: Funnelsans;
+  src: url("/src/fonts/FunnelSans-VariableFont_wght.ttf") format("truetype");
+}
+
+:root {
+  --violet: #332254;
+  --vert: #505f53;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -11,4 +27,9 @@ a {
 img,
 video {
   display: block;
+}
+
+h1 {
+  font-family: Funnelsans;
+  color: var(--violet);
 }
