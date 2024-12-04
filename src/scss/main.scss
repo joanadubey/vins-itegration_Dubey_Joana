@@ -9,6 +9,8 @@
   src: url("/src/fonts/FunnelSans-VariableFont_wght.ttf") format("truetype");
 }
 
+@import "bootstrap/scss/bootstrap-grid";
+
 :root {
   --violet: #332254;
   --vert: #505f53;
