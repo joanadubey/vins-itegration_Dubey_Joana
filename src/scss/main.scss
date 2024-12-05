@@ -11,6 +11,13 @@
 
 @import "bootstrap/scss/bootstrap-grid";
 
+@media (max-width: 768px) {
+  .navprincipale {
+    gap: 20px; // Réduit l'espace entre les éléments pour les écrans plus petits
+    font-size: 16px; // Ajuste la taille de la police
+  }
+}
+
 :root {
   --violet: #332254;
   --vert: #505f53;
@@ -44,45 +51,39 @@ video {
 }
 
 .navigation {
-  max-width: 100%;
   height: 124px;
-  flex-shrink: 0;
   background-color: white;
+  margin-left: 40px;
+  margin-right: 40px;
   display: flex;
-  padding-left: 40px;
-  padding-right: 40px;
+  align-items: center;
+  justify-content: space-between; /* Ajoute cet alignement */
 }
 
 .navprincipale {
   display: flex;
-  height: 30px;
-  align-items: center;
   gap: 55px;
-  flex-shrink: 0;
-  color: #000;
   font-family: Playfair;
   font-size: 20px;
-  font-style: normal;
   font-weight: 500;
-  line-height: 20px; /* 100% */
   text-transform: uppercase;
-  padding-top: 73px;
+  justify-content: center; /* Centre le contenu de la nav principale */
+  align-items: center; /* Centre verticalement */
+  margin-top: 20px; /* Ajuste la distance par rapport à la navigation secondaire */
+  position: relative; /* Nécessaire pour ne pas chevaucher */
+  transform: translateY(20px); /* Descend encore légèrement */
 }
 
 .navsecondaire {
   display: flex;
-  width: auto;
-  height: 24px;
-  align-items: center;
   gap: 25px;
-  flex-shrink: 0;
-  color: #000;
   font-family: "Funnel Sans";
   font-size: 12px;
-  font-style: normal;
   font-weight: 400;
-  line-height: 20px; /* 166.667% */
   text-transform: uppercase;
+  margin-left: auto; /* Toujours aligné à droite */
+  margin-top: 0; /* Pour ne pas impacter l'espacement vertical */
+  align-items: center; /* Centre verticalement */
 }
 
 .langue-choisie {
@@ -99,9 +100,57 @@ video {
   width: 58px;
   justify-content: space-between;
   align-items: center;
+  padding-top: 73px;
 }
 
 .nav-logo-marque {
   display: flex;
   align-items: center;
+}
+
+.article-texte-integral {
+  display: flex;
+  width: 446px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 18px;
+}
+.article-titre {
+  align-self: stretch;
+  font-family: Playfair;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 35px;
+  text-transform: uppercase;
+}
+
+.article-ligne {
+  width: 446px;
+  height: 1px;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.article-texte {
+  align-self: stretch;
+  font-family: "Funnel Sans";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 27px; /* 168.75% */
+}
+
+.article-calltoaction {
+  display: flex;
+  padding: 10px 15px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-left: 1px solid rgba(0, 0, 0, 0.3);
+  background: rgba(255, 255, 255, 0);
+  color: #000;
+  font-family: "Funnel Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px; /* 168.75% */
+  text-transform: uppercase;
 }
