@@ -71,7 +71,8 @@ video {
   align-items: center; /* Centre verticalement */
   margin-top: 20px; /* Ajuste la distance par rapport à la navigation secondaire */
   position: relative; /* Nécessaire pour ne pas chevaucher */
-  transform: translateY(20px); /* Descend encore légèrement */
+  transform: translateY(37px); /* Descend encore légèrement */
+  padding-bottom: 31px;
 }
 
 .navsecondaire {
@@ -81,7 +82,6 @@ video {
   font-size: 12px;
   font-weight: 400;
   text-transform: uppercase;
-  margin-left: auto; /* Toujours aligné à droite */
   margin-top: 0; /* Pour ne pas impacter l'espacement vertical */
   align-items: center; /* Centre verticalement */
 }
@@ -95,12 +95,18 @@ video {
   gap: 10px;
 }
 
+.nav-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
 .nav-logo {
   display: flex;
   width: 58px;
   justify-content: space-between;
   align-items: center;
-  padding-top: 73px;
+  transform: translateY(37px);
+  padding-bottom: 31px;
 }
 
 .nav-logo-marque {
@@ -108,9 +114,45 @@ video {
   align-items: center;
 }
 
+.logo-marque-div {
+  width: 320px;
+}
+
+.visuel-homepage-titre {
+  color: #fff;
+  font-family: Playfair;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 60px; /* 125% */
+  text-transform: uppercase;
+  margin-bottom: 40px;
+  padding-top: 184px;
+}
+
+.calltoaction-visuel {
+  display: inline-flex;
+  padding: 10px 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background: #fff;
+  color: #000;
+  font-family: "Funnel Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px; /* 168.75% */
+  text-transform: uppercase;
+  margin-bottom: 294px;
+}
+
+.visuel-homepage {
+  transform: translateY(-806px);
+}
 .article-texte-integral {
   display: flex;
-  width: 446px;
+  justify-content: stretch;
   flex-direction: column;
   align-items: flex-start;
   gap: 18px;
@@ -153,4 +195,57 @@ video {
   font-weight: 400;
   line-height: 27px; /* 168.75% */
   text-transform: uppercase;
+}
+
+.article {
+  margin-top: 202px;
+}
+
+.img-homepage {
+  width: 100%;
+}
+
+.dégustation {
+  margin-top: 115px;
+  display: flex;
+  flex-direction: column;
+}
+
+.contenu-ligne {
+  background: rgba(0, 0, 0, 0.3);
+  height: 1px;
+  width: 100%;
+}
+
+.texte-dégustation {
+  color: #000;
+  text-align: center;
+  font-family: Playfair;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 45px; /* 125% */
+  text-transform: uppercase;
+  margin-top: 53px;
+}
+
+.calltoaction {
+  display: inline-flex;
+  padding: 10px 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid #000;
+  background: rgba(255, 255, 255, 0);
+  color: #000;
+  font-family: "Funnel Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px; /* 168.75% */
+  text-transform: uppercase;
+  margin-top: 53px;
+  margin-bottom: 53px;
+  margin-left: auto;
+  margin-right: auto;
 }
