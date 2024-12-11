@@ -27,13 +27,6 @@
   margin-top: 16px;
 }
 
-.row > .col,
-.row > [class^="col-"] {
-  background-color: rgba(86, 61, 124, 0.15);
-  border: 1px solid rgba(86, 61, 124, 0.2);
-  padding: 0;
-}
-
 * {
   box-sizing: border-box;
   margin: 0;
@@ -121,6 +114,7 @@ video {
   background-image: url(../img/homepage.png);
   background-size: cover;
   background-position: bottom center;
+  width: 100%;
 }
 .visuel-homepage-titre {
   color: #fff;
@@ -223,6 +217,7 @@ video {
   margin-top: 115px;
   display: flex;
   flex-direction: column;
+  margin-bottom: 115px;
 }
 
 .contenu-ligne {
@@ -335,8 +330,7 @@ video {
   align-items: center;
   gap: 64px;
   flex-shrink: 0;
-  padding-left: 40px;
-  padding-right: 40px;
+
   margin-top: 36px;
 }
 
@@ -386,4 +380,80 @@ video {
 
 .footer-logo-1 {
   margin-top: 46.65px;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-logo-2 {
+  margin-top: 57.65px;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-langues {
+  display: flex;
+  height: 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 9px;
+  flex-shrink: 0;
+  color: #000;
+  font-family: "Funnel Sans";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 166.667% */
+  text-transform: uppercase;
+  margin-top: 26px;
+}
+
+.footer-langue {
+  display: flex;
+  padding: 2px 10px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-langue-choisie {
+  display: flex;
+  padding: 2px 10px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.footer-petites-infos-droite {
+  margin-left: auto;
+  color: #000;
+  font-family: "Funnel Sans";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px; /* 175% */
+}
+
+.footer-petites-infos {
+  margin-top: 6px;
+  margin-bottom: 11px;
+  display: flex;
+  gap: 40px;
+  justify-content: stretch;
+  margin-left: 40px;
+  margin-right: 40px;
+  color: #000;
+  font-family: "Funnel Sans";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px; /* 175% */
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-skip-ink: none;
+  text-decoration-thickness: auto;
+  text-underline-offset: 6.5%; /* 0.78px */
+  text-underline-position: from-font;
 }
