@@ -117,6 +117,11 @@ video {
   width: 320px;
 }
 
+.header {
+  background-image: url(../img/homepage.png);
+  background-size: cover;
+  background-position: bottom center;
+}
 .visuel-homepage-titre {
   color: #fff;
   font-family: Playfair;
@@ -151,13 +156,13 @@ video {
   justify-content: flex-end;
 }
 
-.visuel-homepage {
-  transform: translateY(-806px);
-}
+// .visuel-homepage {
+//   transform: translateY(-806px);
+// }
 
-.visuel-homepage-bouteille {
-  transform: translateX(-450px);
-}
+// .visuel-homepage-bouteille {
+//   transform: translateX(-450px);
+// }
 .article-texte-integral {
   display: flex;
   justify-content: stretch;
@@ -257,4 +262,128 @@ video {
   margin-bottom: 53px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.footer {
+  background-color: white;
+  padding-top: 48px;
+}
+
+.newsletter-texte {
+  color: #000;
+  text-align: center;
+  font-family: "Funnel Sans";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px; /* 150% */
+  text-transform: uppercase;
+}
+
+.calltoaction-newsletter {
+  display: flex;
+  width: 301px;
+  height: 47px;
+  padding: 10px 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 185px;
+  flex-shrink: 0;
+  color: #000;
+  font-family: "Funnel Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px; /* 168.75% */
+  text-transform: uppercase;
+  color: #000;
+  font-family: "Funnel Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px;
+  border: 1px solid #000;
+  background: rgba(255, 255, 255, 0);
+}
+
+.réseaux {
+  display: flex;
+  width: 73px;
+  height: 36px;
+  align-items: center;
+  gap: 30px;
+  flex-shrink: 0;
+}
+
+.newsletter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 19px;
+}
+
+.trait-footer-logo {
+  background: rgba(0, 0, 0, 0.3);
+  width: 502px;
+  height: 1px;
+}
+
+.footer-logo {
+  display: inline-flex;
+  height: 54.35px;
+  justify-content: center;
+  align-items: center;
+  gap: 64px;
+  flex-shrink: 0;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-top: 36px;
+}
+
+.footer-dégustation .titre {
+  color: #000;
+  font-family: "Funnel Sans";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 21px; /* 140% */
+}
+
+.footer-dégustation .texte {
+  color: #000;
+  font-family: "Funnel Sans";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 21px;
+}
+
+.footer-dégustation .numéro {
+  color: #000;
+  font-family: "Funnel Sans";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 7px;
+  padding-top: 5px;
+}
+
+.footer-dégustation {
+  margin-top: 32.65px;
+}
+
+.footer-adresse {
+  color: #000;
+  font-family: "Funnel Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 21px;
+  text-align: center;
+  margin-top: 50.65px;
+  margin-bottom: 45px;
+}
+
+.footer-logo-1 {
+  margin-top: 46.65px;
 }
