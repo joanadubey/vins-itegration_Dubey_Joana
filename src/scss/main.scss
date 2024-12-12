@@ -221,6 +221,9 @@ video {
   text-transform: uppercase;
 }
 
+.article-calltoaction:hover {
+  padding-left: 25px;
+}
 .article {
   margin-top: 202px;
 }
@@ -280,7 +283,7 @@ video {
 }
 
 .footer {
-  background-color: white;
+  background: rgba(51, 34, 84, 0.1);
   padding-top: 48px;
 }
 
@@ -479,4 +482,168 @@ video {
   text-decoration-thickness: auto;
   text-underline-offset: 6.5%; /* 0.78px */
   text-underline-position: from-font;
+}
+
+.vin-titre {
+  color: #fff;
+  font-family: Playfair;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 60px; /* 125% */
+  text-transform: uppercase;
+  margin-top: 162px;
+  margin-bottom: 8px;
+}
+
+.vin-sous-titre {
+  color: #fff;
+  font-family: "Funnel Sans";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 36px; /* 150% */
+  text-transform: uppercase;
+  margin-bottom: 159px;
+}
+
+.banniere {
+  background-image: url(../img/fond_violet.png);
+  background-position: top center;
+  width: 100%;
+  background-repeat: no-repeat;
+}
+
+.fil-dariane {
+  display: flex;
+  width: 288px;
+  align-items: center;
+  gap: 10px;
+  color: #fff;
+  font-family: "Funnel Sans";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 166.667% */
+  text-transform: uppercase;
+  margin-left: 40px;
+  padding-top: 45px;
+}
+
+.vin-image {
+  margin-top: 11px;
+}
+
+.infos-vin {
+  display: flex;
+  height: 27px;
+  align-items: center;
+  gap: 35px;
+  flex-shrink: 0;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-direction: row;
+  color: #000;
+  font-family: "Funnel Sans";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 27px; /* 135% */
+  text-transform: uppercase;
+  margin-bottom: 88px;
+}
+
+.infos-vin-ligne {
+  width: 1px;
+  height: 31px;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.prix {
+  color: #000;
+  font-family: "Funnel Sans";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 27px; /* 112.5% */
+  text-transform: uppercase;
+  margin-bottom: 23px;
+}
+
+.calltoaction-détail-vin-1 {
+  display: inline-flex;
+  padding: 10px 20px;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #000;
+  background: rgba(255, 255, 255, 0);
+  color: #000;
+  font-family: "Funnel Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px; /* 168.75% */
+  text-transform: uppercase;
+  margin-bottom: 17px;
+}
+
+.calltoaction-détail-vin-2 {
+  display: inline-flex;
+  padding: 10px 20px;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgba(0, 0, 0, 0);
+  background: var(--violet, #332254);
+  color: #fff;
+  font-family: "Funnel Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px; /* 168.75% */
+  text-transform: uppercase;
+  margin-bottom: 161px;
+}
+
+.notes-dégustation {
+  display: flex;
+  width: 354px;
+  height: 410px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  flex-shrink: 0;
+  margin-top: 97px;
+}
+.notes-dégustation-titre {
+  color: #000;
+  font-family: "Funnel Sans";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 35px; /* 145.833% */
+  text-transform: uppercase;
+}
+
+.notes-dégustation-ligne {
+  height: 1px;
+  width: 354px;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.notes-dégustation-texte {
+  color: #000;
+  font-family: "Funnel Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px;
+}
+
+.element-gras {
+  color: #000;
+  font-family: "Funnel Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 27px;
 }
