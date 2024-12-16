@@ -18,6 +18,13 @@
   }
 }
 
+.row > .col,
+.row > [class^="col-"] {
+  background-color: rgba(86, 61, 124, 0.15);
+  border: 1px solid rgba(86, 61, 124, 0.2);
+  padding: 0;
+}
+
 :root {
   --violet: #332254;
   --vert: #505f53;
@@ -27,12 +34,6 @@
   margin-top: 16px;
 }
 
-.row > .col,
-.row > [class^="col-"] {
-  background-color: rgba(86, 61, 124, 0.15);
-  border: 1px solid rgba(86, 61, 124, 0.2);
-  padding: 0;
-}
 * {
   box-sizing: border-box;
   margin: 0;
@@ -47,6 +48,10 @@ img,
 video {
   display: block;
   max-width: 100%;
+}
+.body {
+  margin: 0;
+  padding: 0;
 }
 
 .navigation {
@@ -73,7 +78,9 @@ video {
   transform: translateY(37px); /* Descend encore légèrement */
   padding-bottom: 31px;
 }
-
+a {
+  text-decoration: none;
+}
 .navsecondaire {
   display: flex;
   gap: 25px;
@@ -512,6 +519,7 @@ video {
   background-position: top center;
   width: 100%;
   background-repeat: no-repeat;
+  background-size: 100% 455px;
 }
 
 .fil-dariane {
@@ -614,7 +622,6 @@ video {
 
 .notes-dégustation {
   display: flex;
-  width: 354px;
   height: 410px;
   flex-direction: column;
   align-items: flex-start;
@@ -654,4 +661,109 @@ video {
   font-style: normal;
   font-weight: 600;
   line-height: 27px;
+}
+
+.vin-titres-et-contenus {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 9px;
+  flex-shrink: 0;
+  margin-top: 97px;
+}
+
+.titres-et-contenu {
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+  align-self: stretch;
+}
+
+.titres-et-contenu .titre {
+  width: 166px;
+  color: #000;
+  font-family: "Funnel Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 27px; /* 168.75% */
+  text-transform: uppercase;
+}
+
+.titres-et-contenu .contenu {
+  width: 261px;
+  color: #000;
+  font-family: "Funnel Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+}
+
+.lignes-titres-et-contenu {
+  background: linear-gradient(
+    -270deg,
+    rgba(0, 0, 0, 0.3) 0%,
+    rgba(255, 255, 255, 0.3) 100%
+  );
+  width: 451px;
+  height: 1px;
+}
+
+.vin-similaire-titre {
+  color: #000;
+  text-align: center;
+  font-family: Playfair;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 35px; /* 87.5% */
+  text-transform: uppercase;
+  margin-top: 121px;
+  margin-bottom: 43px;
+}
+
+.bouteilles-vins-similaires {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.vins-similaires-noms {
+  color: #000;
+  text-align: center;
+  font-family: "Funnel Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 27px; /* 168.75% */
+  text-transform: uppercase;
+  margin-top: 20px;
+}
+
+.calltoaction-vins-similaires {
+  display: inline-flex;
+  padding: 10px 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid #000;
+  background: rgba(255, 255, 255, 0);
+  color: #000;
+  font-family: "Funnel Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px; /* 168.75% */
+  text-transform: uppercase;
+  margin-bottom: 115px;
+  margin-top: 58px;
+}
+
+.calltoaction-vins-similaires:hover {
+  border-radius: 0px 25px;
+}
+
+.vins-similaires-conteneur {
+  display: flex;
+  justify-content: center;
 }
