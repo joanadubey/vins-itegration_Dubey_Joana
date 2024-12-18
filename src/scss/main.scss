@@ -195,6 +195,7 @@ a {
 
 .article-ligne {
   width: 446px;
+  width: 100%;
   height: 1px;
   background: rgba(0, 0, 0, 0.3);
 }
@@ -233,8 +234,59 @@ a {
   margin-top: 202px;
 }
 
+.sketchbook .product-image img {
+  transition: transform 0.5s;
+}
+.sketchbook .product-image {
+  overflow: hidden;
+}
+
+.sketchbook:hover .product-image img {
+  transform: scale(1);
+}
+
 .img-homepage {
   width: 100%;
+}
+
+.img-article-container {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  border-radius: 0px 186px;
+}
+
+/* Style de l'image */
+.img-article-container img {
+  display: block; /* Évite les marges supplémentaires pour les images */
+  width: 100%; /* Assure que l'image occupe toute la largeur du conteneur */
+  height: auto; /* Garde les proportions de l'image */
+  transition: transform 0.6s ease; /* Animation douce pour le zoom */
+}
+
+/* Effet de zoom au survol */
+.img-article-container:hover img {
+  transform: scale(1.1); /* Zoom à 110% */
+}
+
+.img-article-container-droite {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  border-radius: 186px 0px;
+}
+
+/* Style de l'image */
+.img-article-container-droite img {
+  display: block; /* Évite les marges supplémentaires pour les images */
+  width: 100%; /* Assure que l'image occupe toute la largeur du conteneur */
+  height: auto; /* Garde les proportions de l'image */
+  transition: transform 0.6s ease; /* Animation douce pour le zoom */
+}
+
+/* Effet de zoom au survol */
+.img-article-container-droite:hover img {
+  transform: scale(1.1); /* Zoom à 110% */
 }
 
 .dégustation {
@@ -355,6 +407,7 @@ a {
 .trait-footer-logo {
   background: rgba(0, 0, 0, 0.3);
   width: 502px;
+  width: 37%;
   height: 1px;
 }
 
@@ -365,7 +418,6 @@ a {
   align-items: center;
   gap: 64px;
   flex-shrink: 0;
-
   margin-top: 36px;
 }
 
@@ -473,7 +525,6 @@ a {
 
 .footer-petites-infos {
   margin-top: 6px;
-  margin-bottom: 11px;
   display: flex;
   gap: 40px;
   justify-content: stretch;
