@@ -94,6 +94,30 @@ a {
   gap: 10px;
 }
 
+.navprincipale p,
+.navsecondaire p {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 3px;
+}
+
+.navprincipale p::before,
+.navsecondaire p::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 0.5px;
+  background-color: #000;
+  transition: width 0.4s ease-out;
+}
+
+.navprincipale p:hover::before,
+.navsecondaire p:hover::before {
+  width: 100%;
+}
+
 .nav-right {
   display: flex;
   flex-direction: column;
