@@ -193,13 +193,6 @@ a {
   justify-content: flex-end;
 }
 
-// .visuel-homepage {
-//   transform: translateY(-806px);
-// }
-
-// .visuel-homepage-bouteille {
-//   transform: translateX(-450px);
-// }
 .article-texte-integral {
   display: flex;
   justify-content: stretch;
@@ -280,17 +273,15 @@ a {
   border-radius: 0px 186px;
 }
 
-/* Style de l'image */
 .img-article-container img {
-  display: block; /* Évite les marges supplémentaires pour les images */
-  width: 100%; /* Assure que l'image occupe toute la largeur du conteneur */
-  height: auto; /* Garde les proportions de l'image */
-  transition: transform 0.6s ease; /* Animation douce pour le zoom */
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: transform 0.6s ease;
 }
 
-/* Effet de zoom au survol */
 .img-article-container:hover img {
-  transform: scale(1.1); /* Zoom à 110% */
+  transform: scale(1.1);
 }
 
 .img-article-container-droite {
@@ -300,17 +291,15 @@ a {
   border-radius: 186px 0px;
 }
 
-/* Style de l'image */
 .img-article-container-droite img {
-  display: block; /* Évite les marges supplémentaires pour les images */
-  width: 100%; /* Assure que l'image occupe toute la largeur du conteneur */
-  height: auto; /* Garde les proportions de l'image */
-  transition: transform 0.6s ease; /* Animation douce pour le zoom */
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: transform 0.6s ease;
 }
 
-/* Effet de zoom au survol */
 .img-article-container-droite:hover img {
-  transform: scale(1.1); /* Zoom à 110% */
+  transform: scale(1.1);
 }
 
 .dégustation {
@@ -721,6 +710,7 @@ a {
   line-height: 27px; /* 168.75% */
   text-transform: uppercase;
   margin-bottom: 161px;
+  transition-duration: 0.5s;
 }
 
 .calltoaction-détail-vin-2-vert:hover {
@@ -831,7 +821,7 @@ a {
   line-height: 35px; /* 87.5% */
   text-transform: uppercase;
   margin-top: 121px;
-  margin-bottom: 43px;
+  margin-bottom: 53px;
 }
 
 .bouteilles-vins-similaires {
