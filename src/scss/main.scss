@@ -823,6 +823,12 @@ a {
 .bouteilles-vins-similaires {
   padding-left: 15px;
   padding-right: 15px;
+  position: relative; /* Nécessaire si d'autres styles interagissent */
+  transition: transform 0.3s ease;
+}
+
+.bouteilles-vins-similaires:hover {
+  transform: scale(1.03); /* Agrandit l'élément */
 }
 
 .vins-similaires-noms {
