@@ -66,6 +66,7 @@ video {
   position: relative; /* Nécessaire pour ne pas chevaucher */
   transform: translateY(37px); /* Descend encore légèrement */
   padding-bottom: 31px;
+  text-align: center;
 }
 a {
   text-decoration: none;
