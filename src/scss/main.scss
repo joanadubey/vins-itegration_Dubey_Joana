@@ -1,12 +1,8 @@
 @font-face {
-  font-family: Playfairdisplay;
-  src: url("/src/fonts/PlayfairDisplay-VariableFont_wght.ttf")
-    format("truetype");
-}
-
-@font-face {
-  font-family: Funnelsans;
-  src: url("/src/fonts/FunnelSans-VariableFont_wght.ttf") format("truetype");
+  font-family: "FunnelSans";
+  src: url("../fonts/funnelsans-variablefont_wght-webfont.woff2")
+      format("woff2"),
+    url("../fonts/funnelsans-variablefont_wght-webfont.woff") format("woff");
 }
 
 @import "bootstrap/scss/bootstrap-grid";
@@ -60,7 +56,7 @@ video {
 .navprincipale {
   display: flex;
   gap: 55px;
-  font-family: Playfair;
+  font-family: Playfair Display;
   font-size: 20px;
   font-weight: 500;
   text-transform: uppercase;
@@ -149,11 +145,11 @@ a {
 }
 .visuel-homepage-titre {
   color: #fff;
-  font-family: Playfair;
+  font-family: Playfair Display;
   font-size: 48px;
   font-style: normal;
   font-weight: 800;
-  line-height: 60px; /* 125% */
+  line-height: 60px;
   text-transform: uppercase;
   margin-bottom: 40px;
   padding-top: 184px;
@@ -203,10 +199,10 @@ a {
 }
 .article-titre {
   align-self: stretch;
-  font-family: Playfair;
+  font-family: Playfair Display;
   font-size: 40px;
   font-weight: 600;
-  line-height: 35px;
+  line-height: 45px;
   text-transform: uppercase;
 }
 
@@ -318,7 +314,7 @@ a {
 .texte-dégustation {
   color: #000;
   text-align: center;
-  font-family: Playfair;
+  font-family: Playfair Display;
   font-size: 36px;
   font-style: normal;
   font-weight: 500;
@@ -560,7 +556,7 @@ a {
 
 .vin-titre {
   color: #fff;
-  font-family: Playfair;
+  font-family: Playfair Display;
   font-size: 48px;
   font-style: normal;
   font-weight: 500;
@@ -814,7 +810,7 @@ a {
 .vin-similaire-titre {
   color: #000;
   text-align: center;
-  font-family: Playfair;
+  font-family: Playfair Display;
   font-size: 40px;
   font-style: normal;
   font-weight: 600;
